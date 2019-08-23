@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Caculator
+    <br>
+    <input type="text" value="" id="nhap1">
+    <input type="text" value="" id="nhap2">
+    <br>
+    <br>
+    <button type="button" value="phepcong" onclick="cong()">Addition(+)</button>
+    <button type="button" value="pheptru" onclick="tru()">Subtracktion(-)</button>
+    <button type="button" value="phepnhan" onclick="nhan()">Multiplication(X)</button>
+    <button type="button" value="phepchia" onclick="chia()">Division(/)</button>
+    <p id ="result"></p>
+    <script>
+
+
+
+        function cong() {
+            let nhap1 = parseInt(document.getElementById("nhap1").value);
+            let nhap2 = parseInt(document.getElementById("nhap2").value);
+            let kq = nhap1 + nhap2;
+            document.getElementById("result").innerHTML = "result la : "+ kq;
+        }
+        function tru() {
+            let nhap1 = parseInt(document.getElementById("nhap1").value);
+            let nhap2 = parseInt(document.getElementById("nhap2").value);
+            let kq = nhap1 - nhap2;
+            document.getElementById("result").innerHTML = "result la : "+ kq;
+        }
+        function nhan() {
+            let nhap1 = parseInt(document.getElementById("nhap1").value);
+            let nhap2 = parseInt(document.getElementById("nhap2").value);
+            let kq = nhap1 * nhap2;
+            document.getElementById("result").innerHTML = "result la : "+ kq;
+        }
+        function chia() {
+            let nhap1 = parseInt(document.getElementById("nhap1").value);
+            let nhap2 = parseInt(document.getElementById("nhap2").value);
+            let kq = nhap1/nhap2;
+            document.getElementById("result").innerHTML = "result la : "+ kq;
+        }
+
+    </script>
+</form>
+</body>
+</html>
+</body>
+</html>
